@@ -21,8 +21,8 @@
         <div class="col text-center">
 
             <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
-            <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
-            <button id="btnDetener" class="btn btn-primary">Detener</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
 
         </div>
     </div>
@@ -51,6 +51,13 @@
 
     <script type="text/javascript" src="../assets/js/underscore-min.js"></script>
     <script src="../assets/js/juego.js"></script>
+    <script>
+        // inicializarJuego();
+        console.log(miModulo);
+        document.querySelector('#btnNuevo').addEventListener('click', ()=>{
+            miModulo.nuevoJuego();
+        })
+    </script>
 </body>
 
 </html>
