@@ -40,4 +40,19 @@ txtInput.addEventListener('keyup', (event) => {
         crearTodoHtml(nuevoTodo);
         txtInput.value = '';
     }
-})
+});
+
+divTodoList.addEventListener('click', (event) => {
+
+    const nombreElemento = (event.target.localName); // input, label, button
+    const todoElemento = (event.target.parentElement.parentElement);
+    const todoId = todoElemento.getAttribute('data-id');
+
+    if (nombreElemento.includes('input')) { // Hizo click en el checkbox
+
+        todoList.marcarCompletado(todoId);
+        todoElemento.classList.toggle('completed');
+    }
+    console.log(todoList)
+
+});
