@@ -11,19 +11,24 @@ export class TodoList {
 
     eliminarTodo (id){
 
+        this.todos = this.todos.filter (todo => todo.id != id);
+
     }
     marcarCompletado (id){
 
         for (const todo of this.todos) {
      
         if(todo.id == id) { // == porque todo.id es string numero y id es numero, para no comparar tipo de dato
-            console.log(todo.id, id)
+            
             todo.completado = !todo.completado;
             break;
         }
         }
 
     }
-    eliminarCompletados (){}
+    eliminarCompletados (){
+
+        this.todos = this.todos.filter (todo => !todo.completado);
+    }
 
 }
