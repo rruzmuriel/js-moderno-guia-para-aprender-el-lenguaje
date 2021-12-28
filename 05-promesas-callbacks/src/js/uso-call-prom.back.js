@@ -42,3 +42,6 @@ Promise.all([buscarHeroe(heroeId1), buscarHeroe(heroeId2)])
 }).finally(()=> {
     console.log('Se terminón el promise.all')
 })
+
+
+console.log('Fin de programa');
