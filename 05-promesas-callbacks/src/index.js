@@ -1,10 +1,17 @@
-import { heroesCiclo, heroeIfAwait } from './js/await';
+// import { heroesCiclo, heroeIfAwait } from './js/await';
 
-import './styles.css';
+import { getDouble } from "./js/await-task";
 
-heroesCiclo();
 
-heroeIfAwait('iron');
+// import './styles.css';
+
+// heroesCiclo();
+
+// heroeIfAwait('iron');
+
+getDouble(8);
+
+
 
 // import { promesaLenta, promesaMedia, promesaRapida } from "./js/promesas";
 
