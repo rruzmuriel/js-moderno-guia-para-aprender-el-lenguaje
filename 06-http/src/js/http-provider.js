@@ -1,4 +1,5 @@
 const jokeUrl = 'https://api.chucknorris.io/jokes/random';
+const urlUsuarios ='https://reqres.in/api/users?page=2';
 
 const obtenerChiste = async()=> {
 
@@ -16,6 +17,15 @@ const obtenerChiste = async()=> {
     }
 }
 
+const obtenerUsuarios = async()=> {
+
+    const resp = await fetch(urlUsuarios);
+    // const data = await resp.json();
+    // console.log(data)
+    const{data} = await resp.json();
+    return data;
+}
 export {
     obtenerChiste,
+    obtenerUsuarios
 }

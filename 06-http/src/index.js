@@ -1,8 +1,16 @@
-import { init } from "./js/chistes.page";
 
-init();
+// PARA HACER LLAMADA EJERCICIO CRUD
 
-// Cómo hacer peticiones http con fetch
+import { obtenerUsuarios } from "./js/http-provider";
+
+obtenerUsuarios().then(console.log)
+
+// PARA HACER LLAMADA EJERCICIO CHISTES
+// import { init } from "./js/chistes.page";
+
+// init();
+
+// CÓMO HACER PETICIONES HTTP CON FECTH
 
 // const jokeUrl = 'https://api.chucknorris.io/jokes/random';
 
