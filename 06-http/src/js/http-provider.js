@@ -22,8 +22,10 @@ const obtenerUsuarios = async()=> {
     const resp = await fetch(urlUsuarios);
     // const data = await resp.json();
     // console.log(data)
-    const{data} = await resp.json();
-    return data;
+    
+    // Cambiamos la data por el nombre: usuario
+    const{data: usuario} = await resp.json();
+    return usuario;
 }
 export {
     obtenerChiste,

@@ -1,11 +1,17 @@
+// PARA HACER LLAMADA EJERCICIO CRUD de usuarios-page
 
-// PARA HACER LLAMADA EJERCICIO CRUD
+import { init } from "./js/usuarios.page";
 
-import { obtenerUsuarios } from "./js/http-provider";
+init()
 
-obtenerUsuarios().then(console.log)
+// PARA HACER LLAMADA EJERCICIO CRUD de obtener usuarios
+
+// import { obtenerUsuarios } from "./js/http-provider";
+
+// obtenerUsuarios().then(console.log)
 
 // PARA HACER LLAMADA EJERCICIO CHISTES
+
 // import { init } from "./js/chistes.page";
 
 // init();
