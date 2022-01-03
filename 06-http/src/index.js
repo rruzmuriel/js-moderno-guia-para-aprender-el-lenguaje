@@ -4,6 +4,11 @@ import * as CRUD from './js/crud-provider';
 
 CRUD.getUsuario(1).then(console.log);
 
+CRUD.crearUsuario({
+    name: 'Rafa',
+    job: 'Dev'
+}).then(console.log)
+
 
 
 // PARA HACER LLAMADA EJERCICIO de usuarios-page
