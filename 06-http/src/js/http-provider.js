@@ -9,7 +9,7 @@ const obtenerChiste = async()=> {
 
         const { icon_url, id, value} = await resp.json();
 
-        return { icon_url, id, value}
+        return { icon_url, id, value};
 
     } catch (err) {
         throw err;

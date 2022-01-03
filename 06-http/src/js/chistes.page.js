@@ -16,10 +16,10 @@ const crearChistesHtml = () => {
         </ol>    
         `;
 
-        const divChsites = document.createElement('div');
-        divChsites.innerHTML= html;
+        const divChistes = document.createElement('div');
+        divChistes.innerHTML= html;
 
-        body.append(divChsites);
+        body.append(divChistes);
 }
 
 const eventos = ()=> {
