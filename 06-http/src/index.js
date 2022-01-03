@@ -7,7 +7,12 @@ CRUD.getUsuario(1).then(console.log);
 CRUD.crearUsuario({
     name: 'Rafa',
     job: 'Dev'
-}).then(console.log)
+}).then(console.log);
+
+CRUD.actualizarUsuario( 2, {
+    name: 'Marina',
+    job: 'Developer'
+}).then(console.log);
 
 
 
