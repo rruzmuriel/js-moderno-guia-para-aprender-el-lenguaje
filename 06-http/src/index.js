@@ -1,20 +1,26 @@
+// PARA HACER EJERCICIO CLOUDINARY
+
+import { init } from './js/file-page';
+init()
+
+
 // PARA HACER EJERCICIO CRUD
 
-import * as CRUD from './js/crud-provider';
+// import * as CRUD from './js/crud-provider';
 
-CRUD.getUsuario(3).then(console.log);
+// CRUD.getUsuario(3).then(console.log);
 
-CRUD.crearUsuario({
-    name: 'Rafa',
-    job: 'Dev'
-}).then(console.log);
+// CRUD.crearUsuario({
+//     name: 'Rafa',
+//     job: 'Dev'
+// }).then(console.log);
 
-CRUD.actualizarUsuario( 2, {
-    name: 'Marina',
-    job: 'Developer'
-}).then(console.log);
+// CRUD.actualizarUsuario( 2, {
+//     name: 'Marina',
+//     job: 'Developer'
+// }).then(console.log);
 
-CRUD.borrarUsuario(3).then(console.log);
+// CRUD.borrarUsuario(3).then(console.log);
 
 
 

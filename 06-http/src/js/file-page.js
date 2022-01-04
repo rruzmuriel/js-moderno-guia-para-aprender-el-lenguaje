@@ -20,10 +20,10 @@ const crearInputFileHtml = () => {
 
     const div = document.createElement('div');
     div.innerHTML = html;
-    body.append( div );
+    body.append(div);
 
     inputFile = document.querySelector('input');
-    imgFoto   = document.querySelector('#foto');
+    imgFoto = document.querySelector('#foto');
 
 }
 
@@ -34,7 +34,7 @@ const eventos = () => {
 
         const file = event.target.files[0];
         // console.log(file);
-        subirImagen( file ).then( url => imgFoto.src = url );
+        subirImagen(file).then(url => imgFoto.src = url);
 
     });
 
