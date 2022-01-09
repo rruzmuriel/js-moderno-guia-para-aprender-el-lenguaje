@@ -1,2 +1,3 @@
-# js-moderno-guia-para-aprender-el-lenguaje
-https://www.udemy.com/course/javascript-fernando-herrera/learn/lecture/17136804#overview
+# Ejemplos de JavaScript Moderno
+
+Curso JavaScript Moderno: Guía para dominar el lenguaje de [@Klerith](https://github.com/Klerith) en [Udemy](https://www.udemy.com/course/javascript-fernando-herrera/)
